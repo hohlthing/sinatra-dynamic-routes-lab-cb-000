@@ -12,7 +12,7 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
-    string = ""
+    string = ''
     params[:number].to_i.times { string += params[:phrase] }
     string
   end
@@ -37,6 +37,7 @@ class App < Sinatra::Base
     when 'divide'
       answer = (num_1 / num_2).to_s
     end
+    "#{answer}"
   end
 
 end
