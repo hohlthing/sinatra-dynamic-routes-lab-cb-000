@@ -25,7 +25,7 @@ class App < Sinatra::Base
     num_1 = params[:number1].to_i
     num_2 = params[:number2].to_i
 
-    answer = 'Unable to perform this operation'
+    answer = 'Please use a valid operator: add, subtract, multiply, or divide.'
 
     case params[:operation]
     when 'add'
