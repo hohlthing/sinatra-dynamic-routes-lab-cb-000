@@ -36,7 +36,6 @@ class App < Sinatra::Base
       when 'divide'
         answer = (num1 / num2).to_s
     end
-    answer
   end
 
 end
