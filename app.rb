@@ -38,4 +38,5 @@ class App < Sinatra::Base
       answer = (num_1 / num_2).to_s
     end
   end
+
 end
