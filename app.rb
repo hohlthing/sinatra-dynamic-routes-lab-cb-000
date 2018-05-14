@@ -25,15 +25,15 @@ class App < Sinatra::Base
     num1 = params[:number1].to_i
     num2 = params[:number2].to_1
 
-    answer = 'Please enter a valid operator!'
+    answer = "Please enter a valid operator!"
     case params[:operation]
-      when 'add'
+      when "add"
         answer = (num1 + num2).to_s
-      when 'subtract'
+      when "subtract"
         answer = (num1 - num2).to_s
-      when 'multiply'
+      when "multiply"
         answer = (num1 * num2).to_s
-      when 'divide'
+      when "divide"
         answer = (num1 / num2).to_s
     end
   end
